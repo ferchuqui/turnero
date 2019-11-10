@@ -4,7 +4,7 @@ class BigNumber extends Component {
   constructor (props) {
     super(props)
     this.state = {
-      number: 19
+      number: 18
     }
   }
   render () {

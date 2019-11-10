@@ -1,16 +1,10 @@
 import React, { Component } from 'react'
-import BigNumber from '../component/BigNumber.js'
-import Form from '../component/Form'
-
-// medicospitufo.com.ar/ -> pages/index.js
-// medicospitufo.com.ar/bigNumber -> pages/bigNumber/index.js 
-// medicospitufo.com.ar/adminPage -> pages/adminPage/index.js
-
+import AdminPage from '../../component/AdminPage'
 class Home extends Component {
   render () {
     return (
       <div>
-        <Form/>
+        <AdminPage/>
 
         <style global jsx>{`
           body {

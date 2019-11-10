@@ -18,9 +18,9 @@ class Form extends Component {
       <form onSubmit={this.handleSubmit}>
         <h1>Reserva tu turno</h1>
         <h2>Completa tus datos y nosotros te avisaremos</h2>
-        <input type="text" name="name" value={this.state.name} onChange={this.handleNameChange} placeholder="Enter your Name" />
-        <input type="number" name="dni" value={this.state.dni} onChange={this.handleDNIChange}placeholder="Enter your DNI" />
-        <input type="submit" />
+        <input type="text" name="name" value={this.state.name} onChange={this.handleNameChange} placeholder="Nombre" />
+        <input type="number" name="dni" value={this.state.dni} onChange={this.handleDNIChange}placeholder="DNI" />
+        <input type="submit" value="Reservar"/>
         <style jsx>{`
         
           form {
@@ -33,6 +33,10 @@ class Form extends Component {
           }
           h1,h2 {
             text-align: center;
+            
+          }
+          h1 {
+            text-transform: Uppercase;
           }
           input[type="text"], input[type="number"] {
             font-size: 22px;
@@ -43,6 +47,7 @@ class Form extends Component {
           }
           input[type="submit"] {
             border: 0;
+            margin-top: 30px;
             background: #7db395;
             color: white;
             padding: 15px;

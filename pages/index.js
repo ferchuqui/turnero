@@ -2,9 +2,7 @@ import React, { Component } from 'react'
 import BigNumber from '../component/BigNumber.js'
 import Form from '../component/Form'
 
-// medicospitufo.com.ar/ -> pages/index.js
-// medicospitufo.com.ar/bigNumber -> pages/bigNumber/index.js 
-// medicospitufo.com.ar/adminPage -> pages/adminPage/index.js
+
 
 class Home extends Component {
   render () {
@@ -13,10 +11,11 @@ class Home extends Component {
         <Form/>
 
         <style global jsx>{`
+        @import url('https://fonts.googleapis.com/css?family=Roboto&display=swap');
           body {
             margin:0;
             padding: 0;
-          }
+            font-family: 'Roboto', sans-serif;
         `}</style>
       </div>
     )
